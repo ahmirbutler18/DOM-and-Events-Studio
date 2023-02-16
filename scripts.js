@@ -7,7 +7,8 @@ window.addEventListener("load", function() {
     const height = document.getElementById('spaceShuttleHeight')
     const button = document.getElementById('takeoff')
     button.addEventListener("click", function() {
-        let response = window.confirm('Confirm that the shuttle is ready for takeoff.')
+        let response = 
+        window.confirm('Confirm that the shuttle is ready for takeoff.')
         if (response) {
             paragraph.innerHTML = 'Shuttle in flight'
             colorInBack.style.backgroundColor = 'blue'
@@ -17,4 +18,8 @@ window.addEventListener("load", function() {
 
     })
     const landButton = document.getElementById('landing')
+    landButton.addEventListener("click", function(){
+        let response = 
+        window.confirm('The shuttle is landing. Landing gear engaged.')
+    })
 })
